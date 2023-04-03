@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="firstMission.css">
+    <title>내 상점</title>
+</head>
+<body>
+    <div class="bar">
+        <div class="bar1">
+            <div class="appNotify">
+                <a class="app">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvM
+                    jAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0
+                    iMTYiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNiAxNyI+CiAgICA8ZGVmcz4KICAgICAgICA8c
+                    GF0aCBpZD0ibTg4aW90dDQ5YSIgZD0iTTE2IDExLjAxOGwtLjAwMS41N2MtLjAwMS4xNi0uMDAzLjM
+                    yLS4wMDcuNDgxLS4wMS4zNDktLjAzLjcwMS0uMDk0IDEuMDQ2LS4wNjMuMzUtLjE2Ny42NzYtLjMzM
+                    S45OTUtLjE2MS4zMTItLjM3MS41OTktLjYyMi44NDdzLS41NC40NTYtLjg1Ny42MTVjLS4zMjIuMTYy
+                    LS42NTEuMjY1LTEuMDA2LjMyOC0uMzQ5LjA2Mi0uNzA1LjA4Mi0xLjA1OC4wOTItLjY3OS4wMDgtLjg3
+                    MS4wMDgtMS4wNjQuMDA4SDUuMDRjLS43NC0uMDAyLS45MDItLjAwNC0xLjA2NC0uMDA4LS4zNTMtLjA
+                    xLS43MDktLjAzLTEuMDU4LS4wOTItLjM1NC0uMDYzLS42ODQtLjE2Ni0xLjAwNi0uMzI4LS4zMTYtLj
+                    E2LS42MDYtLjM2Ny0uODU3LS42MTUtLjI1LS4yNDgtLjQ2LS41MzUtLjYyMi0uODQ3LS4xNjQtLjMxO
+                    S0uMjY4LS42NDUtLjMzMS0uOTk1LS4wNjMtLjM0NS0uMDg0LS42OTctLjA5My0xLjA0Ni0uMDA1LS4x
+                    Ni0uMDA3LS4zMi0uMDA4LS40OEwwIDExLjAxOFY0Ljk4MmwuMDAxLS41N2MuMDAxLS4xNi4wMDMtLjM
+                    yLjAwOC0uNDgxLjAxLS4zNDkuMDMtLjcwMS4wOTMtMS4wNDYuMDYzLS4zNS4xNjctLjY3Ni4zMzEtLj
+                    k5NS4xNjEtLjMxMy4zNzEtLjU5OS42MjItLjg0N3MuNTQtLjQ1Ni44NTctLjYxNUMyLjIzNC4yNjYgM
+                    i41NjQuMTYzIDIuOTE4LjFjLjM1LS4wNjIuNzA1LS4wODIgMS4wNTgtLjA5MkM0LjY1NiAwIDQuODQ4
+                    IDAgNS4wNCAwSDEwLjgwMiA4Ljc1aDIuMjFjLjc0LjAwMi45MDIuMDA0IDEuMDY0LjAwOC4zNTMuMDE
+                    uNzA5LjAzIDEuMDU4LjA5Mi4zNTUuMDYzLjY4NC4xNjYgMS4wMDYuMzI4LjMxNi4xNi42MDYuMzY3Lj
+                    g1Ny42MTUuMjUuMjQ4LjQ2MS41MzQuNjIyLjg0Ny4xNjQuMzE5LjI2OC42NDQuMzMxLjk5NS4wNjMuM
+                    zQ1LjA4NC42OTcuMDk0IDEuMDQ2LjAwNC4xNi4wMDYuMzIuMDA3LjQ4bC4wMDEuNTcxdjYuMDM2eiIv
+                    PgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICA
+                    gICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgMS4wMDAwMDApIj4KICAgICAgICAgIC
+                    AgPG1hc2sgaWQ9IjN4bmRjNnc0YWIiIGZpbGw9IiNmZmYiPgogICAgICAgICAgICAgICAgPHVzZSB4b
+                    GluazpocmVmPSIjbTg4aW90dDQ5YSIvPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDxw
+                    YXRoIGZpbGw9IiNEODBDMTgiIGQ9Ik0wIDBIMTZWMTZIMHoiIG1hc2s9InVybCgjM3huZGM2dzRhYikiL
+                    z4KICAgICAgICAgICAgPGcgZmlsbD0iI0ZGRiIgbWFzaz0idXJsKCMzeG5kYzZ3NGFiKSI+CiAgICAgI
+                    CAgICAgICAgICA8cGF0aCBkPSJNOC45MSA0LjkyMUwzLjY0MyAxMC41NmMtLjAzNC4wMzYtLjA5NS4w
+                    MDgtLjA4OS0uMDQybC41ODgtNC43NzZIMS43MDRjLS4wNDUgMC0uMDY4LS4wNTQtLjAzOC0uMDg3TDY
+                    uOTMzLjAxN2MuMDM0LS4wMzcuMDk1LS4wMDkuMDg5LjA0MWwtLjU4OCA0Ljc3NmgyLjQzN2MuMDQ2ID
+                    AgLjA3LjA1NC4wMzkuMDg3eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi43MTE4NjQsIDIuNzExODY0K
+                    SIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" 
+                    width="16" height="17" alt="앱 다운이에요!!!" style="margin-right: 5px;">
+                    앱 다운로드
+                </a>
+                <button class="notifyButton">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvM
+                    jAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgID
+                    xnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggc3Ryb2tlPSIj
+                    Q0NDIiBkPSJNLTE2LjUtMTYuNWg0OXY0OWgtNDl6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0U5Qj
+                    Q1NyIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOCAwbDIuNSA0LjkzNCA1LjUuNzktNCAzLjg0OC45
+                    IDUuNDI4TDggMTIuNDM0IDMuMSAxNSA0IDkuNTcyIDAgNS43MjRsNS41LS43OXoiLz4KICAgIDwvZz
+                    4KPC9zdmc+Cg==" height="15" width="16" alt="즐겨찾기 이미지">
+                    즐겨찾기
+                </button>
+            </div>
+            <div class="login">
+                <button class="login-join">로그인/회원가입</button>
+                <a class="myShop" href="" style="text-decoration: none;">내 상점</a>
+            </div>
+        </div>
+    </div>
+    <div class = "top-bar">  <!--네비게이션 바 전체 컨테이너-->
+        <div class = "insner-bar0"> <!--검색창, 카테고리 등 컨테이너-->
+            <div class = "inner-bar1">
+                <div>
+                    <a class="logo" href="file:///C:/Users/yjin1/OneDrive/Main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/UMC%204th/WEB/firstMission.html">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmc
+                        iIHdpZHRoPSIxMzYiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxMzYgNDAiPgogICAgPGcgZmlsbD0ibm9uZS
+                        IgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBmaWxsPSIjRDgwQzE4Ij4KICAgICAgICAgICAgPHBhd
+                        GggZD0iTTIxLjc1MSAxNC44TDUuOTY3IDMxLjc1NmMtLjEwMi4xMS0uMjg2LjAyNS0uMjY3LS4xMjVsMS43Ni0x
+                        NC4zNjNILjE1NmMtLjEzNiAwLS4yMDctLjE2Mi0uMTE0LS4yNjJMMTUuODI2LjA1Yy4xMDMtLjExLjI4Ni0uMDI
+                        1LjI2OC4xMjVsLTEuNzYgMTQuMzYzaDcuMzAzYy4xMzYgMCAuMjA3LjE2Mi4xMTQuMjYyTTc5LjQgMi41NTVWMjk
+                        uNjVoLTQuMDNWMTYuMTMyaC0yLjZ2MTMuMDA0SDY4LjhWMi43MDVoMy45NzF2OS4zMjRoMi42VjIuNTU1aDQuMDN
+                        6TTk0LjcgMTguNDU4Yy43NTcgMCAxLjQ5My4wMDUgMi4yMS4wMTUuNzE0LjAxMiAxLjM0NC4wMzYgMS44OS4wNzU
+                        gMi4yNTcuMTM4IDQuMDA3LjY1IDUuMjQ2IDEuNTMzIDEuMjQuODgyIDEuODYgMi4yMDcgMS44NiAzLjk3M3MtLjYy
+                        IDMuMDg2LTEuODYgMy45NmMtMS4yNC44NzItMi45OSAxLjM4OC01LjI0NyAxLjU0OC0uNTI1LjAzOS0xLjE0NS4wN
+                        jMtMS44Ni4wNzMtLjcxNy4wMS0xLjQ1OC4wMTQtMi4yMjMuMDE0LS43NjcgMC0xLjUwOC0uMDA1LTIuMjI0LS4w
+                        MTQtLjcxNS0uMDEtMS4zMzUtLjAzNC0xLjg2LS4wNzMtMi4yNTgtLjE2LTQuMDA3LS42NzYtNS4yNDgtMS41NDg
+                        tMS4yNC0uODc0LTEuODYtMi4xOTQtMS44Ni0zLjk2cy42Mi0zLjA4NCAxLjg2LTMuOTU4YzEuMjQxLS44NzIgMi
+                        45OS0xLjM4OCA1LjI0OC0xLjU0OC41MjUtLjAyIDEuMTQ1LS4wMzkgMS44Ni0uMDYuNzE2LS4wMiAxLjQ1Mi0uM
+                        DMgMi4yMDgtLjAzek0xMzMgMi41NTVWMjkuNjVoLTQuMTIzVjE2LjM0M2gtNC4xMjN2LTMuOTIxaDQuMTIzVjI
+                        uNTU1SDEzM3ptLTk4LjE1NSAxNy42N3Y1LjE4NWgxNi44NzN2My42NUgzMC41MTN2LTguODM1aDQuMzMyem0zMi4
+                        xODctMTcuMDhjLS4yNDQgMi43MjgtLjY1NiA1LjI2OC0xLjIzNyA3LjYxOS0uNTggMi4zNS0xLjI2NyA0LjU0NS0
+                        yLjA2MSA2LjU4LS43OTUgMi4wMzktMS42NyAzLjkyNS0yLjYyNyA1LjY2Ny0uOTU4IDEuNzQtMS45MzQgMy4zNjMtM
+                        i45MzIgNC44NzFsLTMuNTEyLTIuMTdjLjk1Ni0xLjM2MSAxLjg1My0yLjgwMyAyLjY4OC00LjMxOS44MzQtMS41MT
+                        ggMS41ODMtMy4wNzkgMi4yNDQtNC42OS42NjEtMS42MDcgMS4yMzItMy4yMzUgMS43MS00Ljg4NS40NzktMS42NDg
+                        uODQtMy4yNzggMS4wODUtNC44ODZoLTYuOTYzVjMuMTQ0em01Ny4xNjEgMHYzLjczNGgtOS4zNDh2NS44NDFoOC42O
+                        TN2My42MTVoLTguNjkzdjcuMDc0bDEyLjI2NS0uNDh2My41NTNsLTE2LjQ5Mi44MTFWMy4xNDRoMTMuNTc1ek05NC4
+                        3MTUgMjEuOTdjLS42ODYgMC0xLjM1Ni4wMS0yLjAxMi4wMjktLjY1NS4wMjItMS4yMzUuMDUtMS43NC4wOS0xLjAyN
+                        y4wOTktMS43NjguMzE3LTIuMjIyLjY1Ni0uNDU0LjMzNi0uNjguNzczLS42OCAxLjMwOCAwIC41MzguMjI2Ljk3My4
+                        2OCAxLjMxLjQ1NC4zMzcgMS4xOTUuNTU1IDIuMjIyLjY1NC41MDUuMDQxIDEuMDg1LjA3IDEuNzQuMDkuNjU2LjAyI
+                        DEuMzI2LjAyOSAyLjAxMi4wMjkuNjg1IDAgMS4zNTUtLjAxIDIuMDExLS4wMjkuNjU1LS4wMiAxLjIzNC0uMDQ5ID
+                        EuNzM5LS4wOSAxLjAyOS0uMSAxLjc3LS4zMTcgMi4yMjQtLjY1NC40NTMtLjMzNy42OC0uNzcyLjY4LTEuMzEgMC0u
+                        NTM1LS4yMjctLjk3Mi0uNjgtMS4zMDgtLjQ1NC0uMzQtMS4xOTUtLjU1Ny0yLjIyNC0uNjU3LS41MDUtLjAzOC0xLj
+                        A4NC0uMDY3LTEuNzM5LS4wOS0uNjU2LS4wMTktMS4zMjYtLjAyOC0yLjAxMS0uMDI4ek01MS43MTggMi41NTV2MTku
+                        NDM3aC00LjI1OXYtOS41OThoLTMuOTU4djUuODEzSDI4Ljc0NlYyLjg1Nmg0LjI1OXY0LjE1aDYuMjM4di00LjE1S
+                        DQzLjV2NS42MDNoMy45NThWMi41NTVoNC4yNTl6bTQ2LjYzNC41OXYzLjcyaC00Ljk0NGMtLjM2Ni42ODMtLjc3My
+                        AxLjM4My0xLjIzMSAyLjEwNS0uMDc0LjExOC0uMTYuMjM0LS4yMzUuMzVsNy40ODUgNC44OTgtMi4zNTggMy4yNjI
+                        tNy4yMzItNS4yMDVjLS4wMzcuMDQ4LS4wNy4wOTYtLjEwNy4xNDMtLjg5NSAxLjEzNy0xLjg0IDIuMjMyLTIuODM0I
+                        DMuMjgtLjk5NSAxLjA0Ny0xLjk4IDEuOTY2LTIuOTUzIDIuNzZsLTIuNzc1LTIuODA3Yy43NzYtLjYxMSAxLjU1MS
+                        0xLjMwNiAyLjMyNy0yLjA5Ljc3Ni0uNzgyIDEuNTI2LTEuNjA3IDIuMjUyLTIuNDcuNzI2LS44NjQgMS40MDItMS4
+                        3NTggMi4wMy0yLjY4NC4zNDgtLjUxNi42NjUtMS4wMy45Ni0xLjU0Mkg4Mi42di0zLjcyaDE1Ljc1MnptNi40MTgt
+                        LjU5VjguMWgyLjkwM3YzLjk2aC0yLjkwM3Y2LjRoLTQuMTY1VjIuNTU0aDQuMTY1em0tNjUuNTI3IDguMDIzaC02L
+                        jIzOHYzLjk5N2g2LjIzOHYtMy45OTd6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwgNC4wMDAwMDApIi
+                        8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="번개장터 로고입니다" width= "136" height= "40">
+                    </a>
+                </div>
+                <div class="search-box">
+                    <div class="search">
+                        <input type="text" placeholder="상품명, 지역명, @상점명 검색" class="input-box" value>
+                        <a>
+                            <img src="https://m.bunjang.co.kr/pc-static/resource/2be3c66fa47ccd5ece2a.png"
+                            width="16px" height="16px" alt="검색이미지입니다.">
+                        </a>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <button class="rButton">
+                        <img src="https://m.bunjang.co.kr/pc-static/resource/32554a59cf002b3def10.png" width="23" height="24" alt="번개톡 이미지">
+                        번개톡</button>
+                    <a class="rButton" href="file:///C:/Users/yjin1/OneDrive/Main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/UMC%204th/WEB/firstMission2.html">
+                        <img src="https://m.bunjang.co.kr/pc-static/resource/31370b164bc5b7cc4fef.png" width="23" height="24" alt="내상점 이미지">
+                        내상점</a>
+                    <a class="rButton">
+                        <img src="https://m.bunjang.co.kr/pc-static/resource/bcc7abb5d531bcf26033.png" width="23" height="24" alt="판매하기 이미지">
+                        판매하기</a>
+                </div>
+            </div>
+            <div class = "inner-bar2">
+                <div class="lbButton">
+                    <img src="https://m.bunjang.co.kr/pc-static/resource/9ddac97c001dd6e0c2eb.png" 
+                    width="20" height="16" alt="메뉴 버튼 아이콘">
+                </div>
+                <div class="lbStyle">
+                    <a href="" target="_blank" class="style2">
+                        <b>번개장터 판매자센터</b>
+                    </a>
+                    <img src="https://m.bunjang.co.kr/pc-static/resource/34a01cb11e0b14957f81.png" 
+                    width="72" height="26" alt="판매자센터 이미지">
+                </div>
+            </div>
+        </div>
+        <div class="rsSupport">
+            <div style="width: 90px;">
+                <div class="rsSupport1">
+                    <div class="rsSupport1-1">찜한 상품</div>
+                    <div></div>
+                </div>
+                <div class="rsSupport1">
+                    <div class="rsSupport1-1">최근본상품</div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="rsSupport1">
+                    <button class="rsSupport1-2">TOP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--내 상점 본문 위치-->
+    <div class="main-container">
+        <div class="subMain-container">
+            <div style="margin-bottom: 30px;"><!--내상점 설명 블럭-->
+                <div class="profile-block">
+                    <div size="310" class="profile-image">
+                        <img src="https://item.kakaocdn.net/do/936a3cfd8572f61b631dec4e2eda5af79f5287469802eca457586a25a096fd31" alt="사용자 이미지">
+                    </div>
+                    <div class="profile"><!--내 상점 설명 블럭-->
+                        <div class="profile-font">
+                            <div class="profile-font-name">
+                                옆마당상점
+                                <button style="margin-left: 10;">
+                                    상점명 수정
+                                </button>
+                            </div>
+                            <div class="profile-serfi">
+                                본인인증 완료
+                            </div>
+                        </div>
+                        <div class="profile-font1">
+                            <div class="shop-info">
+                                <img src="https://m.bunjang.co.kr/pc-static/resource/4b323fe1ef79c2b715fe.png" 
+                                width="14" height="13" alt="">
+                                상점오픈일
+                                <div class="shop-info-inner">0 일 전</div>
+                            </div>
+                            <div class="shop-info">
+                                <img src="https://m.bunjang.co.kr/pc-static/resource/e6792c64a6ba6f2b10a2.png" 
+                                width="14" height="13" alt="">
+                                상점방문수
+                                <div class="shop-info-inner">0 명</div>
+                            </div>
+                            <div class="shop-info">
+                                <img src="https://m.bunjang.co.kr/pc-static/resource/ef9d606d24890f02bde0.png" 
+                                width="14" height="13" alt="">
+                                상품판매
+                                <div class="shop-info-inner">0 회</div>
+                            </div>
+                            <div class="shop-info">
+                                <img src="https://m.bunjang.co.kr/pc-static/resource/b6ca1c340805703d7c62.png" 
+                                width="14" height="13" alt="">
+                                택배발송
+                                <div class="shop-info-inner">0 회</div>
+                            </div>
+                        </div>
+                        <div class="profile-font2">
+                            클론 코딩으로 만들고 있는 페이지 입니다. 음 최대한 비슷하게 만들고자 합니다~~~~~~~~~~~~~~~
+                            `~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        </div>
+                        <div class="profile-font3">
+                            <button class="intro_modi">
+                                소개글 수정
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><!--판매상품 등 조회-->
+                <div class="intro-merch" >
+                    <a href="" class="intro-merch-inner">
+                        상품
+                        <span style="margin-left: 10px;"> 0 </span>
+                    </a>
+                    <a href="" class="intro-merch-inner">
+                        상점후기
+                        <span style="margin-left: 10px;"> 0 </span>
+                    </a>
+                    <a href="" class="intro-merch-inner">
+                        찜
+                        <span style="margin-left: 10px;"> 0 </span>
+                    </a>
+                    <a href="" class="intro-merch-inner">
+                        팔로잉
+                        <span style="margin-left: 10px;"> 0 </span>
+                    </a>
+                    <a href="" class="intro-merch-inner">
+                        팔로워
+                        <span style="margin-left: 10px;"> 0 </span>
+                    </a>
+                </div>
+                <div ><!--조회 내용-->
+                    <div class="merch-info">
+                        <div>상품
+                            <span style="color: rgb(247, 47, 51);">5</span>
+                        </div>
+                    </div><!--카테제목??? 비슷한 것 -->
+                    <div style="margin-top: 30px;">
+                        <div style="margin-bottom: 25px;">전체 1개</div>
+                        <div class="merch-view"><!--내 상품 보여주는거-->
+                            <div class="merch-backGround">
+                                <a class="merch-each" target="_blank" rel="noopener noreferrer">
+                                    <div class="merch-img">
+                                        <img src="https://item.kakaocdn.net/do/936a3cfd8572f61b631dec4e2eda5af79f5287469802eca457586a25a096fd31" width="194" height="194" alt="상품 이미지">
+                                        <div class="pay-position">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwM
+                                            C9zdmciIHdpZHRoPSIzNSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDM1IDE2Ij4KICAgIDxnIGZpbGw9
+                                            Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGc+CiAgICAgICAgICAgIDxnIHRyYW5zZm9
+                                            ybT0idHJhbnNsYXRlKC05NTguMDAwMDAwLCAtODQ2LjAwMDAwMCkgdHJhbnNsYXRlKDk1OC4wMDAwMDAsID
+                                            g0Ni4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIzNSIgaGVpZ2h0PSIxNiIgZmlsb
+                                            D0iI0Q4MEMxOCIgcng9IjIiLz4KICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik05LjIy
+                                            NiAzLjAwM2wtLjU2IDQuNTYzaDIuMzI1Yy4wNDMgMCAuMDY2LjA1Mi4wMzYuMDgzbC01LjAyNCA1LjM4OGMt
+                                            LjAzMy4wMzUtLjA5MS4wMDgtLjA4NS0uMDRsLjU2LTQuNTYzSDQuMTUzYy0uMDQzIDAtLjA2Ni0uMDUyLS4w
+                                            MzYtLjA4M0w5LjE0IDIuOTYzYy4wMzMtLjAzNS4wOTEtLjAwOC4wODUuMDR6bTExLjgwMy43MDZ2OC41OWgt
+                                            MS4zMDZWMy43MWgxLjMwNnptOC40NDcgMHY4LjU5aC0xLjM0NVYzLjcxaDEuMzQ1em0tMTAuMjY1LjA0OHY4
+                                            LjM4aC0xLjI4OFY4LjEzOGgtLjc3NlY2Ljg3NWguNzc2VjMuNzU3aDEuMjg4em01LjM5OC0uMDJjLjM1MyAw
+                                            IC42NzcuMDUuOTcuMTQ5LjI5NC4wOTkuNTQ4LjI1Ljc2My40NTUuMjE0LjIwMy4zODUuNDU4LjUxMS43NjU
+                                            uMTI2LjMwNi4xOTkuNjYzLjIxOCAxLjA3MS4wMTIuMjc0LjAyMi41MzcuMDI4Ljc5LjAwNi4yNTEuMDEuNS4w
+                                            MS43NDUgMCAuMjQ2LS4wMDQuNDkzLS4wMS43NDJzLS4wMTYuNTA3LS4wMjguNzc1Yy0uMDIuNDE0LS4wOTIu
+                                            NzczLS4yMTggMS4wNzYtLjEyNi4zMDMtLjI5Ny41NTctLjUxMS43Ni0uMjE1LjIwNC0uNDcuMzU2LS43NjIuN
+                                            DU1LS4yOTQuMDk5LS42MTguMTQ4LS45NzEuMTQ4LS43MTQgMC0xLjI5MS0uMi0xLjczMy0uNjAyLS40NDItL
+                                            jQwMi0uNjg1LTEuMDE1LS43My0xLjgzN2wtLjAzMy0uNzg1Yy0uMDEtLjI0OC0uMDE0LS40OTYtLjAxNC0uNz
+                                            QgMC0uMjQ2LjAwNS0uNDk0LjAxNC0uNzQzLjAxLS4yNDguMDIxLS41MS4wMzQtLjc4NC4wNDQtLjgyMy4yODc
+                                            tMS40MzUuNzI5LTEuODM2LjQ0Mi0uNDAzIDEuMDItLjYwNCAxLjczMy0uNjA0em0tNy4wODQuMTgydjEuMTg3
+                                            aC0uNTMxbC0uMDE2IDUuMDc1LjYxNC0uMDI0djEuMTY3bC00LjQ3LjE5MnYtMS4xODdsLjYyNC0uMDI0LS4wM
+                                            TctNS4yaC0uNTMxVjMuOTJoNC4zMjd6bTcuMDg0IDEuMDA1Yy0uMTY1IDAtLjMxMi4wMjctLjQ0LjA4MS0uMTM
+                                            uMDU0LS4yNDIuMTQ0LS4zMzcuMjY4LS4wOTUuMTI0LS4xNy4yODgtLjIyNy40OTItLjA1Ny4yMDUtLjA5NS40N
+                                            i0uMTE0Ljc2Ni0uMDI1LjM3Ni0uMDM4Ljc2Ny0uMDM4IDEuMTcyIDAgLjQwNS4wMTMuNzk2LjAzOCAxLjE3Mi
+                                            4wMi4zMDYuMDU3LjU2MS4xMTQuNzY1LjA1Ny4yMDQuMTMyLjM2OC4yMjcuNDkzLjA5NS4xMjQuMjA3LjIxMy
+                                            4zMzYuMjY4LjEzLjA1NC4yNzYuMDguNDQuMDguMTY1IDAgLjMxMi0uMDI2LjQ0LS4wOC4xMy0uMDU1LjI0My0u
+                                            MTQ0LjMzNy0uMjY4LjA5NS0uMTI1LjE3LS4yODkuMjI4LS40OTMuMDU2LS4yMDQuMDk0LS40Ni4xMTMtLjc2NS
+                                            4wMjUtLjM3Ni4wMzgtLjc2Ni4wMzgtMS4xNjcgMC0uNDAyLS4wMTMtLjc5NC0uMDM4LTEuMTc3LS4wMTktLjMw
+                                            Ni0uMDU3LS41NjEtLjExMy0uNzY2LS4wNTctLjIwNC0uMTMzLS4zNjgtLjIyOC0uNDkyLS4wOTQtLjEyNC0uMj
+                                            A3LS4yMTQtLjMzNi0uMjY4LS4xMy0uMDU0LS4yNzYtLjA4MS0uNDQtLjA4MXptLTguODk0LjE4MmgtLjcwN2wu
+                                            MDE2IDUuMTUuNjc1LS4wMjYuMDE2LTUuMTI0eiIvPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogIC
+                                            AgPC9nPgo8L3N2Zz4K" alt="번개페이 이미지">
+                                        </div>
+                                    </div>
+                                    <div class="merch-text">
+                                        <div class="context">상품제목이름</div>
+                                        <div class="price">
+                                            <div class="cost">
+                                                20000
+                                            </div>
+                                            <div class="time">
+                                                <span>몇 시간???</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="merch-margin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--아래 footer부분-->
+    <div class="bmenu">
+        <div class="bmenu1">
+            <div class="bmenu3">
+                <a href="" target="_blank" class="bmenu-margin">회사소개</a>
+                <a href="" target="_blank" class="bmenu-margin">이용약관</a>
+                <a href="" target="_blank" class="bmenu-margin">운영정책</a>
+                <a href="" target="_blank" class="bmenu-margin">개인정보처리방침</a>
+                <a href="" target="_blank" class="bmenu-margin">청소년보호정책</a>
+                <a href="" target="_blank" class="bmenu-margin">광고제휴</a>
+            </div>
+        </div>
+        <div class="bmenu2">
+            <div class="bmenu4">
+                <div>
+                    <div class="bmenu-info">
+                        <div style="margin-top: 0px;">
+                            <div class="bmenu-Title">번개장터(주) 사업자정보</div>
+                            <div class="bmenu-info-ist">
+                                대표이사 : 최재화, 강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;개인정보보호책임자 : 박병성
+                                <br>
+                                사업자등록번호 : 113-86-45836&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;통신판매업신고 : 2019-서울서초-1126
+                                <br>
+                                호스팅서비스 제공자 : Amazon Web Services (AWS)
+                                <br>
+                                EMAIL : help@bunjang.co.kr&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;FAX : 02-598-8241
+                                <br>
+                                주소 : 서울특별시 서초구 서초대로 38길 12, 7, 10층(서초동, 마제스타시티, 힐스테이트 서리풀)
+                                <br>
+                                <a href="" target="_blank" class="bmenu-under">사업자정보 확인</a>
+                            </div>
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <div class="bmenu-location bmenu-info-ist">
+                                <div>
+                                    <b>번개장터(주)더현대서울점</b>
+                                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;최재화, 강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;365-85-01581
+                                    <br>
+                                    서울특별시 영등포구 여의대로 108, 지하2층(여의도동, 파크원)
+                                </div>
+                                <div>
+                                    <b>번개장터(주)코엑스점</b>
+                                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;최재화, 강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;142-85-27412
+                                    <br>
+                                    서울특별시 강남구 영동대로 513, 쇼핑몰동 B1층 C102호(삼성동, 코엑스)
+                                </div>
+                                <div>
+                                    <b>번개장터(주)센터필드점</b>
+                                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;최재화, 강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;808-85-01905
+                                    <br>
+                                    서울특별시 강남구 테헤란로 231, 쇼핑몰동 1층 W124호(역삼동)(역삼동, 센터필드)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bmenu-Title">
+                        고객센터&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="10" height="10" viewBox="0 0 10 20" 
+                        role="img"><path fill="#9b99a9" fill-rule="evenodd" 
+                        d="M1 20a.994.994 0 0 0 .748-.337l8-9a.999.999 0 0 0 0-1.328l
+                        -8-9A1 1 0 0 0 .254 1.663L7.664 10l-7.41 8.336A.999.999 0 0 0 1 20"></path></svg>
+                    </div>
+                    <div class="bmenu-info-ist">
+                        <strong>1670-2910</strong>
+                        <br>
+                        운영시간 9시 - 18시 (주말/공휴일 휴무, 점심시간 12시 - 13시)
+                        <br>
+                        <div style="display: flex;">
+                            <a href="" style="margin-right: 10px;" class="bmenu-under">공지사항</a>
+                            <a href="" style="margin-right: 10px;" class="bmenu-under">1:1 문의하기</a>
+                            <a href="" class="bmenu-under">자주 묻는 질문</a>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <div class="bmenu-Title">
+                            우리은행 채무지급보증 안내
+                        </div>
+                        <div class="bmenu-info-ist">
+                            <div>번개장터㈜는 회사가 직접 판매하는 상품에 한하여, </div>
+                            <div>고객님의 현금 결제 금액에 대해 우리은행과 채무지급보증 계약을</div>
+                            <div>체결하여 안전거래를 보장하고 있습니다.</div>
+                            <br>
+                            <a href="" target="_blank" class="bmenu-under">서비스 가입사실 확인</a>
+                            <div class="rights-copy">Ⓒ Bungaejangter. Inc All rights reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bmenu5">
+                <div class="bmenu-info">
+                    <a href="" target="_blank" class="bmenu-foot">
+                        <img src="https://m.bunjang.co.kr/pc-static/resource/ee757469a142ab4f2f48.png" width="31" height="28" alt="ISMS 인증마크"
+                        style="margin-right: 16px;">
+                        <div>
+                            [인증범위] 번개장터 중고거래 플랫폼 서비스 운영(심사받지 않은 물리적 인프라 제외)
+                            <div>
+                                [유효기간] 2021.05.18 ~ 2024.05.17
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bmenu-info">
+                    <div style="margin-top: 0px;" class="bmenu-foot">
+                        번개장터㈜는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 
+                        전자상거래 등에서의 소비자보호에 관한 법률 등 관련 법령 및 번개장터㈜의 약관에 따라 
+                        상품, 상품정보, 거래에 관한 책임은 개별 판매자에게 귀속하고, 
+                        번개장터㈜는 원칙적으로 회원간 거래에 대하여 책임을 지지 않습니다. 
+                        다만, 번개장터㈜가 직접 판매하는 상품에 대한 책임은 번개장터㈜에게 귀속합니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
