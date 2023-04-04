@@ -7,7 +7,6 @@ let naver = document.getElementById("use_naver");
 let facebook = document.getElementById("use_facebook");
 let self_identify = document.getElementById("use_identify");
 
-
 login.addEventListener('click', function(){
   if(cancel1.style.display == "none" && cancel2.style.display == "none"){
     cancel1.style.display = "block";

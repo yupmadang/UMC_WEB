@@ -1,0 +1,200 @@
+/*내 상점 본문 관련 class*/
+
+.main-container{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+  }
+  
+  .subMain-container{
+    width: 1024px;
+    margin-top: 30px;
+  }
+  
+  .profile-block{
+    display: flex;
+    width: 100%;
+  }
+  
+  .profile-image{
+    width: 310px;
+    height: 310px;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  
+  .profile{
+    flex: 1 0 0%;
+    padding: 0px 30px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-right: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    display: flex;
+    height: 310px;
+    flex-direction: column;
+  }
+  
+  .profile-font{
+    font-size: 18px;
+    height: 75px;
+    font-weight: 600;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  
+  .profile-font1{
+    height: 45px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-top: 1px solid rgb(250, 250, 250);
+    border-bottom: 1px solid rgb(250, 250, 250);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+  }
+  
+  .profile-font2{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
+    line-height: 1.57;
+    white-space: pre-wrap;
+  }
+  
+  .profile-font3{
+    height: 56px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .profile-font-name{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  
+  .profile-serfi{
+    font-size: 11px;
+    color: rgb(77, 77, 77);
+    position: relative;
+  }
+  
+  .shop-info{
+    margin-right: 30px;
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+    display: flex;
+  
+  }
+  
+  .shop-info-inner{
+    margin-left: 5px;
+    color: rgb(33, 33, 33);
+  }
+  
+  .intro_modi{
+    display: flex;
+    height: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 5px;
+    color: rgb(136, 136, 136);
+    border: 1px solid rgb(238, 238, 238);
+    font-size: 11px;
+  }
+  
+  .intro-merch{
+    display: flex;
+    height: 50px;
+  }
+  
+  .intro-merch-inner{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    text-decoration: none;
+    justify-content: center;
+    border-top: 1px solid rgb(33, 33, 33);
+    border-right: 1px solid rgb(33, 33, 33);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    flex: 1 1 0%;
+  }
+  
+  .merch-info{
+    display: flex;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 50px 0px 20px;
+  }
+  
+  .merch-margin{
+    width: 100%;
+    display: flex;  
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 40px 0px 100px;
+  }
+  
+  /*판매하기 페이지 관련 class 정리*/
+  .sell-base{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: white;
+  }
+  
+  .sell-bar{
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 20px;
+    height: 78px;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+  }
+  
+  .sell-category{
+    display: flex;
+    align-items: center;
+  }
+  
+  .cate-home{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 28px;
+    font-size: 12px;
+  }
+  
+  .cate-home-select{
+    border: 1px solid rgb(238, 238, 238);
+    display: flex;
+    width: 100%;
+    height: 28px;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+    color: rgb(77, 77, 77);
+    background: rgb(255, 255, 255);
+  }
+  
+  .cate-select{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 25px 0px 10px;
+    position: relative;
+    width: 100%;
+  }
